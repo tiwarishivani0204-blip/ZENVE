@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZENVÉ – Collection</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset some defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        .shop-header {
+            text-align: center;
+            background-color: #111;
+            color: #fff;
+            padding: 40px 20px 20px 20px;
+        }
+
+        .shop-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .shop-header p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .ai-banner img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Products grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            justify-items: center;
+        }
+
+        /* Product card */
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin: 15px 0 5px 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: 600;
+            font-size: 18px;
+            color: #000;
+            margin: 10px 0;
+        }
+
+        /* Buttons */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .add-cart {
+            background-color: #118fd8;
+            color: #fff;
+        }
+
+        .buy-now {
+            background-color: #fa0606;
+            color: #fff;
+        }
+
+        /* Responsive text sizes */
+        @media (max-width: 600px) {
+            .shop-header h1 {
+                font-size: 36px;
+            }
+
+            .shop-header p {
+                font-size: 16px;
+            }
+
+            .product-card img {
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="shop-header">
+    <div class="ai-banner">
+        <img src="https://img.freepik.com/premium-photo/high-fashion-style-banner-design-with-highresolution-masterpieces-captivating-visual_1020495-4917.jpg" alt="AI Fashion Banner">
+    </div>
+
+    <h1>ZENVÉ</h1>
+    <p>Luxury Essentials</p>
+</header>
+
+<section class="products">
+
+    <div class="product-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.xWhnlfnHp0CgXKwnxS0JaQHaE8?w=270&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.freepik.com/premium-photo/creative-fashion-handbags-shoes-with-shining-background-design_168085-3473.jpg" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$180</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://affordableskating.weebly.com/uploads/4/9/2/8/49282571/s275925179741148330_c4_i1_w640.jpeg" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$50</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.bezIVu6wLXO2kla2J5R4lgHaEo?w=186&h=116&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.5BMmGBRI2hJ05q0d913CLQHaE8?w=297&h=198&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$50</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="data:image/webp;base64,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" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$150</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.squarespace-cdn.com/content/v1/5790fb74b3db2bde1aa17729/1620056789788-PDVBT7VMBNUEYF18JVCN/Terrex-Eco-Friendly-Outdoor-Shoes.jpg?format=1000w" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.G-pVLlSFRuIhcBVmGHnKDwHaE6?w=247&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$199</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://threadcurve.com/wp-content/uploads/2021/03/dress-brands-mar302021.jpg" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://i.ebayimg.com/images/g/B68AAOSwb3RlEk8~/s-l1600.jpg" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$299</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://www.meshpedia.com/wp-content/uploads/2023/04/hiking-boot.png" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$299</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://wallpapercave.com/wp/wp10076335.jpg" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-beautiful-woman-sitting-in-trees-in-an-orange-lehenga-image_2943037.jpg" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$149</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/6b/aa/0e/6baa0ec58322ed8eadbf612c98ef45a7.jpg" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$99</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://image.made-in-china.com/2f0j00HFDkcTbJlVoS/Urban-Fashionable-Outdoor-Hiking-Shoes.jpg" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$199</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.pexels.com/photos/6971878/pexels-photo-6971878.jpeg?cs=srgb&dl=pexels-hebertsantos-6971878.jpg&fm=jpg" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$199</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.XL7aNwOC3CqyIJ3TC7QshgHaFj?w=236&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$299</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.freepik.com/premium-photo/creative-fashion-handbags-shoes-with-shining-background-design_168085-3473.jpg" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$199</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://affordableskating.weebly.com/uploads/4/9/2/8/49282571/s275925179741148330_c4_i1_w640.jpeg" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$599</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://i.pinimg.com/736x/7e/3d/47/7e3d472d8821a3c4334c0ceef69868fa.jpg" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$699</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.freepik.com/premium-photo/cute-girl-landscape-garden-posing-fashion-shoot-wearing-traditional-dress_658768-599.jpg?w=740" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$799</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.NcCy4oKQ5aTg0pxQd2C3-AHaHa?w=187&h=187&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://thumbs.dreamstime.com/b/generative-ai-image-pair-shoes-beach-landscape-mountain-view-generative-ai-image-pair-shoes-beach-362465483.jpg" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$199</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://wallup.net/wp-content/uploads/2016/03/01/309579-women-model-blonde-long_hair-women_outdoors-nature-rock-trees-landscape-forest-dress-closed_eyes-barefoot-fall-leaves-bare_shoulders-windy.jpg" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.goodfon.com/wallpaper/nbig/f/e0/anton-fedorenko-model-shatenka-stoit-na-prirode-poza-plate-p.webp" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$149</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://i.pinimg.com/originals/74/51/13/745113d2a902c5dc5bafaae1742cdf93.png" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$189</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.TLXZpTmVW0XMxzQuXTHMyAHaHa?w=207&h=207&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$99</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.ey7KzgCo5uhBKZXXahvTzwHaEK?w=282&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.45PzjnoX9RC_hWK-9zToAAHaE7?w=280&h=187&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Dress">
+        <h3>ZENVÉ Classic Dress</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$100</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.I9cIQ9WtUJAefu6sLFnMfQHaE7?w=292&h=195&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="ZENVÉ Purse">
+        <h3>ZENVÉ Leather Purse</h3>
+        <p>Category: Purse</p>
+        <p class="price">$79</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://www.clippingpathcampus.com/wp-content/uploads/2024/01/image_2024_01_19T06_50_29_707Z-1536x878.png" alt="ZENVÉ Shoes">
+        <h3>ZENVÉ Signature Shoes</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$69</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.freepik.com/premium-photo/gorgeous-girl-landscape-wearing-traditional-dress-glasses-sitting-floor-with-pillar-garden_658768-317.jpg?w=1380" alt="ZENVÉ Top">
+        <h3>ZENVÉ Premium Top</h3>
+        <p>Category: Clothes</p>
+        <p class="price">$89</p>
+        <div class="btn-container">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+        </div>
+        
+    </div>
+    
+
+</section>
+
+</body>
+</html>
